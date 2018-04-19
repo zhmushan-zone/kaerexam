@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "request": "^2.85.0"
+  },
+  "devDependencies": {
+    "@types/request": "^2.47.0"
+  }
+}
