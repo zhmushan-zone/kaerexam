@@ -4,6 +4,7 @@
 访问`https://nodejs.org/zh-cn/`下载合适的版本, 安装完成后打开命令行, 进入该项目目录, 输入以下命令
 ```bash
 npm i -g typescript
+npm i
 tsc index.ts
 node index.js
 ```
