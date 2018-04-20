@@ -1,6 +1,6 @@
 exports.__esModule = true;
 var request = require("request");
-var answerId = '1804192109085497776781497';
+var answerId = '删掉引号里这些字, 改称你的answerId, 就是一串数字';
 request.post('https://www.qingsuyun.com/h5/actions/exam/execute/find-exam.json', {
     form: {
         'answerId': answerId,
