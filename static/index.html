@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            padding-top: 64px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 66%;
+        }
+
+        .form-time {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-time input[type="number"] {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <input class="form-control" placeholder="姓名" id="username">
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="college">
+                <option value="浙江大学">浙江大学</option>
+                <option value="杭州电子科技大学">杭州电子科技大学</option>
+                <option value="浙江工业大学">浙江工业大学</option>
+                <option value="浙江理工大学">浙江理工大学</option>
+                <option value="浙江海洋大学">浙江海洋大学</option>
+                <option value="浙江农林大学">浙江农林大学</option>
+                <option value="温州医科大学">温州医科大学</option>
+                <option value="浙江中医药大学">浙江中医药大学</option>
+                <option value="浙江师范大学">浙江师范大学</option>
+                <option value="杭州师范大学">杭州师范大学</option>
+                <option value="湖州师范学院">湖州师范学院</option>
+                <option value="绍兴文理学院">绍兴文理学院</option>
+                <option value="台州学院">台州学院</option>
+                <option value="温州大学">温州大学</option>
+                <option value="丽水学院">丽水学院</option>
+                <option value="浙江工商大学">浙江工商大学</option>
+                <option value="嘉兴学院">嘉兴学院</option>
+                <option value="中国美术学院">中国美术学院</option>
+                <option value="中国计量大学">中国计量大学</option>
+                <option value="公安海警学院">公安海警学院</option>
+                <option value="浙江万里学院">浙江万里学院</option>
+                <option value="浙江科技学院">浙江科技学院</option>
+                <option value="宁波工程学院">宁波工程学院</option>
+                <option value="浙江水利水电学院">浙江水利水电学院</option>
+                <option value="浙江财经大学">浙江财经大学</option>
+                <option value="浙江警察学院">浙江警察学院</option>
+                <option value="衢州学院">衢州学院</option>
+                <option value="宁波大学">宁波大学</option>
+                <option value="浙江传媒学院">浙江传媒学院</option>
+                <option value="浙江树人学院">浙江树人学院</option>
+                <option value="浙江越秀外国语学院">浙江越秀外国语学院</option>
+                <option value="宁波大红鹰学院">宁波大红鹰学院</option>
+                <option value="浙江大学城市学院">浙江大学城市学院</option>
+                <option value="浙江大学宁波理工学院">浙江大学宁波理工学院</option>
+                <option value="杭州医学院">杭州医学院</option>
+                <option value="浙江工业大学之江学院">浙江工业大学之江学院</option>
+                <option value="浙江师范大学行知学院">浙江师范大学行知学院</option>
+                <option value="宁波大学科学技术学院">宁波大学科学技术学院</option>
+                <option value="杭州电子科技大学信息工程学院">杭州电子科技大学信息工程学院</option>
+                <option value="浙江理工大学科技与艺术学院">浙江理工大学科技与艺术学院</option>
+                <option value="浙江海洋大学东海科学技术学院">浙江海洋大学东海科学技术学院</option>
+                <option value="浙江农林大学暨阳学院">浙江农林大学暨阳学院</option>
+                <option value="温州医科大学仁济学院">温州医科大学仁济学院</option>
+                <option value="浙江中医药大学滨江学院">浙江中医药大学滨江学院</option>
+                <option value="杭州师范大学钱江学院">杭州师范大学钱江学院</option>
+                <option value="湖州师范学院求真学院">湖州师范学院求真学院</option>
+                <option value="绍兴文理学院元培学院">绍兴文理学院元培学院</option>
+                <option value="温州大学瓯江学院">温州大学瓯江学院</option>
+                <option value="浙江工商大学杭州商学院">浙江工商大学杭州商学院</option>
+                <option value="嘉兴学院南湖学院">嘉兴学院南湖学院</option>
+                <option value="中国计量大学现代科技学院">中国计量大学现代科技学院</option>
+                <option value="浙江财经大学东方学院">浙江财经大学东方学院</option>
+                <option value="温州商学院">温州商学院</option>
+                <option value="同济大学浙江学院">同济大学浙江学院</option>
+                <option value="上海财经大学浙江学院">上海财经大学浙江学院</option>
+                <option value="浙江外国语学院">浙江外国语学院</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input class="form-control" placeholder="学号" id="collegeId">
+        </div>
+        <div class="form-group">
+            <input class="form-control" placeholder="学院" id="faculty">
+        </div>
+        <div class="form-group">
+            <input class="form-control" placeholder="班级" id="className">
+        </div>
+        <div class="form-group" style="display: none">
+            完成时间(建议不要超过24分, 比如你设置1分钟, 那么请你要等1分钟, 才能拿到分数, 最好设置0秒):
+            <div class="form-time">
+                <input type="number" class="form-control" value="0" id="timeM">分
+            </div>
+            <div class="form-time">
+                <input type="number" class="form-control" value="0" id="timeS">秒
+            </div>
+        </div>
+        <button class="btn btn-primary" id="submit" type="button">提交</button>
+    </form>
+    <script>
+        alert('我没有做任何异常处理, 如果程序出现问题, 清联系我')
+        const ipc = require('electron').ipcRenderer
+        const shell = require('electron').shell
+        submit.onclick = evt => {
+            alert('按钮已点击, 不用重复点了')
+            const userInfo = {
+                'collections[0].answerContent': username.value,
+                'collections[1].answerContent': college.value,
+                'collections[2].answerContent': collegeId.value,
+                'collections[3].answerContent': faculty.value,
+                'collections[4].answerContent': className.value,
+                'paperId': '1803217582',
+                'startNow': true
+            }
+            const time = {
+                'minutes': timeM.value,
+                'seconds': timeS.value
+            }
+            ipc.send('user-info', userInfo, time)
+            ipc.once('result-url', (evt, url) => {
+                shell.openExternal(url)
+            })
+        }
+    </script>
+</body>
+
+</html>

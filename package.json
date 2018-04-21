@@ -1,8 +1,40 @@
 {
+  "name": "kaerexam",
+  "version": "1.0.0",
+  "main": "./dist/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:deb": "electron-builder --linux deb",
+    "postinstall": "electron-builder install-app-deps"
+  },
+
+  "repository": "https://github.com/zhmushan/kaerexam.git",
+  "author": "木杉 <zhbnh9988@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/request": "^2.47.0",
+    "electron": "^1.8.4"
+  },
   "dependencies": {
     "request": "^2.85.0"
   },
-  "devDependencies": {
-    "@types/request": "^2.47.0"
+  "build": {
+    "appId": "zhmushan.gihithub.io.kaerexam",
+    "productName": "kaerexam",
+    "copyright": "Copyright © 2018 木杉",
+    "directories": {
+      "output": "release",
+      "app": "./"
+    },
+    "files": [
+      "./**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "category": "Utility"
+    }
   }
 }

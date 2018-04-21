@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "sourceMap": false, 
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "watch": true,
+        "strict": true,
+        "experimentalDecorators": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+	"rules": {
+		"quotemark": [
+			true,
+			"single"
+		],
+		"semicolon": [
+			true,
+			"never"
+		],
+		"prefer-const": true,
+		"trailing-comma": [
+			true,
+			{
+				"multiline": "always",
+				"singleline": "never"
+			}
+		],
+		"only-arrow-functions": true,
+		"curly": true,
+		"eofline": true,
+		"array-type": true,
+		"arrow-return-shorthand": true,
+		"no-angle-bracket-type-assertion": true,
+		"no-inferrable-types": true,
+		"interface-name": true
+	}
+}
