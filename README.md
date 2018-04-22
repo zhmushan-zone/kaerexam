@@ -1,6 +1,10 @@
+#### 最新版支持自定义时间和分数
+
 ### 如果你是纯小白, 或者是懒人, 直接点击下面的链接进行下载安装, 不需要做任何其他操作:
-- [Windows下载地址](https://github.com/zhmushan/kaerexam/releases/download/v1.0.0/kaerexam.Setup.1.0.0.exe)
-- [Ubuntu下载地址](https://github.com/zhmushan/kaerexam/releases/download/v1.0.0/kaerexam_1.0.0_amd64.deb)
+- [Windows下载地址](https://github.com/zhmushan/kaerexam/releases/download/v1.1.0/kaerexam.Setup.1.1.0.exe)
+- [Ubuntu下载地址](https://github.com/zhmushan/kaerexam/releases/download/v1.1.0/kaerexam_1.1.0_amd64.deb)
+
+#### 至于为什么不支持 `Mac OS`, 你来打我呀
 
 ---
 ### 如果不是的请看下面:
