@@ -103,7 +103,7 @@
         <div class="form-group">
             <input class="form-control" placeholder="班级" id="className">
         </div>
-        <div class="form-group" style="display: none">
+        <div class="form-group">
             完成时间(建议不要超过24分, 比如你设置1分钟, 那么请你要等1分钟, 才能拿到分数, 最好设置0秒):
             <div class="form-time">
                 <input type="number" class="form-control" value="0" id="timeM">分
@@ -111,6 +111,10 @@
             <div class="form-time">
                 <input type="number" class="form-control" value="0" id="timeS">秒
             </div>
+        </div>
+        <div class="form-group">
+            你想要拿到的分数, 最高100分, 可能会有1分左右误差
+            <input type="number" value="100" id="score">
         </div>
         <button class="btn btn-primary" id="submit" type="button">提交</button>
     </form>
@@ -133,9 +137,12 @@
                 'minutes': timeM.value,
                 'seconds': timeS.value
             }
-            ipc.send('user-info', userInfo, time)
+            ipc.send('user-info', userInfo, time, score.value)
             ipc.once('result-url', (evt, url) => {
                 shell.openExternal(url)
+            })
+            ipc.once('network-err', evt => {
+                alert('网络错误, 换一个好一点的网络')
             })
         }
     </script>

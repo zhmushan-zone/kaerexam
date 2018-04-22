@@ -8,16 +8,15 @@
     "build:deb": "electron-builder --linux deb",
     "postinstall": "electron-builder install-app-deps"
   },
-
   "repository": "https://github.com/zhmushan/kaerexam.git",
   "author": "木杉 <zhbnh9988@163.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/request": "^2.47.0",
+    "@types/got": "^8.3.0",
     "electron": "^1.8.4"
   },
   "dependencies": {
-    "request": "^2.85.0"
+    "got": "^8.3.0"
   },
   "build": {
     "appId": "zhmushan.gihithub.io.kaerexam",
