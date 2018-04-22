@@ -2,7 +2,6 @@ import { app, BrowserWindow, ipcMain } from 'electron'
 import * as path from 'path'
 import * as url from 'url'
 import { sleep } from './util'
-import * as request from 'request'
 import { getAnswerId, getExam, complete, getAnswerContent, getScore } from './req';
 
 // 保持一个对于 window 对象的全局引用，如果你不这样做，
