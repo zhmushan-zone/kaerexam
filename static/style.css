@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+}
+
+.form-time {
+    display: flex;
+    align-items: center;
+}
+
+.form-time input[type="number"] {
+    width: 30%;
+}
